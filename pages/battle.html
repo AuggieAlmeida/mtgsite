@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MTG - Batalhar</title>
+        <link rel="stylesheet" type="text/css" href="../style/battle.css">
+        <link rel="stylesheet" type="text/css" href="../style/navbar.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="/index.html" id="icon"></a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href>Cartas</a></li>
+                <li><a href="../pages/battle.html">Batalhar</a></li>
+                <li><a href>História</a></li>
+                <li><a href>Monte seu deck</a></li>
+            </ul>
+        </div>
+        <section class="header">
+            <div class="banner">
+                <h1>Magic: The Gathering</h1>
+                <h3>Duelo de maguinhos</h3>
+            </div>
+        </section>
+
+        <div id="content">
+            <h3>Medidor de vidas </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                error voluptatum saepe at, voluptatem minus debitis pariatur,
+                architecto nulla velit voluptate molestias accusamus doloremque
+                repellat cumque, ratione sed facere? Est. Sit amet consectetur
+                adipisicing elit. Perspiciatis quis quod, qui nihil vitae
+                commodi accusamus quo quidem unde placeat fugiat doloribus
+                laudantium ut numquam repellendus facilis quisquam, blanditiis
+                officiis?</p>
+            <table>
+                <tr>
+                    <th>Jogador 1</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vida</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><button id="minus" onclick="rmvLife(1)">-</button></td>
+                    <td id="life1">20</td>
+                    <td><button id="plus" onclick="addLife(1)">+</button></td>
+                    <td id="lifedisplay1"></td>
+                </tr>
+
+                <tr>
+
+                    <th>Jogador 2</th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Vida</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><button id="minus" onclick="rmvLife(2)">-</button></td>
+                    <td><span id="life2">20</span></td>
+                    <td><button id="plus" onclick="addLife(2)">+</button></td>
+                    <td id="lifedisplay2"></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
