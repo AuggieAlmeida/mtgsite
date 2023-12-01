@@ -63,12 +63,92 @@ input {
     height: 800px;
 }
 
+.about {
+    grid-template-columns: 1fr 3fr;
+}
+
+.card {
+    margin: 50px;
+    grid-template-columns: 2fr 3fr 2fr;
+    display: grid;
+    border: 4px solid black;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.aboutcardimg {
+    margin: 25px;
+    background-image: url("/img/promocard.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.card .more, .infocreatures {
+    text-align: center;
+    margin: 20px;
+}
+
+.more p {
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.power {
+    display: flex;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: 90%;
+    margin-top: 20px;
+}
+
+.more button {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #333;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.more button:hover {
+    background-color: #c0c0c0;
+    color: #111;
+}
+
+.aboutpromo {
+    margin: 25px;
+    background-image: url("/img/promodeck.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.info p{
+    margin: 20px;
+    text-align: justify;
+    font-size: 16px;
+    padding-top: 10px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .lands {
     grid-template-columns: 1fr 3fr;
 }
 
 .creatures {
     grid-template-columns: 3fr 1fr;
+}
+
+.creaturecardimg {
+    margin: 25px;
+    background-image: url("/img/creaturecard.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .content {
