@@ -7,10 +7,10 @@
 }
 
 .banner {
-
+    outline: 3px solid #333;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: #000;
-    border-width: 2px;
+    border-width: 3px;
     border-style:dashed;
     border-radius: 15px;
     background-color: #000;
@@ -21,7 +21,8 @@
     background-image:url("../img/bannerbattle.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 1px;
+    background-position:bottom;
+    background-attachment: fixed;
     height: 700px;
 }
 
