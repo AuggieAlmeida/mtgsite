@@ -1,79 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MTG - Batalhar</title>
-        <link rel="stylesheet" type="text/css" href="../style/battle.css">
-        <link rel="stylesheet" type="text/css" href="../style/navbar.css">
-    </head>
-    <body>
-        <div class="navbar">
-            <ul>
-                <li><a href="/index.html" id="icon"></a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href>Cartas</a></li>
-                <li><a href="../pages/battle.html">Batalhar</a></li>
-                <li><a href>História</a></li>
-                <li><a href>Monte seu deck</a></li>
-            </ul>
-        </div>
-        <section class="header">
-            <div class="banner">
-                <h1>Magic: The Gathering</h1>
-                <h3>Duelo de maguinhos</h3>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG - Batalhar</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/battle.css">
+</head>
+
+<body class="bg-gray-50 text-slate-900 transition-colors duration-200">
+    <!-- Navbar component -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <a href="index.html" class="navbar__logo">
+                    <img src="assets/img/icon.png" alt="MTG Logo" width="40" height="40">
+                    <span>Magic: The Gathering</span>
+                </a>
+                <button class="navbar__toggler" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-        </section>
-
-        <div id="content">
-            <h3>Medidor de vidas </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                error voluptatum saepe at, voluptatem minus debitis pariatur,
-                architecto nulla velit voluptate molestias accusamus doloremque
-                repellat cumque, ratione sed facere? Est. Sit amet consectetur
-                adipisicing elit. Perspiciatis quis quod, qui nihil vitae
-                commodi accusamus quo quidem unde placeat fugiat doloribus
-                laudantium ut numquam repellendus facilis quisquam, blanditiis
-                officiis?</p>
-            <table>
-                <tr>
-                    <th>Jogador 1</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Vida</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><button id="minus" onclick="rmvLife(1)">-</button></td>
-                    <td id="life1">20</td>
-                    <td><button id="plus" onclick="addLife(1)">+</button></td>
-                    <td id="lifedisplay1"></td>
-                </tr>
-
-                <tr>
-
-                    <th>Jogador 2</th>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td>Vida</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><button id="minus" onclick="rmvLife(2)">-</button></td>
-                    <td><span id="life2">20</span></td>
-                    <td><button id="plus" onclick="addLife(2)">+</button></td>
-                    <td id="lifedisplay2"></td>
-                </tr>
-            </table>
-
+            <ul class="navbar__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/cards.html">Cartas</a></li>
+                <li><a href="pages/battle.html">Batalhar</a></li>
+                <li><a href="pages/history.html">História</a></li>
+                <li><a href="pages/deckbuilder.html">Monte seu deck</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner-section">
+        <div class="banner">
+            <h1>Magic: The Gathering</h1>
+            <h3>Duelo de maguinhos</h3>
         </div>
+    </section>
 
-        <script src="../js/battle.js"></script>
-    </body>
+    <div id="content">
+        <h3>Medidor de vidas </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+            error voluptatum saepe at, voluptatem minus debitis pariatur,
+            architecto nulla velit voluptate molestias accusamus doloremque
+            repellat cumque, ratione sed facere? Est. Sit amet consectetur
+            adipisicing elit. Perspiciatis quis quod, qui nihil vitae
+            commodi accusamus quo quidem unde placeat fugiat doloribus
+            laudantium ut numquam repellendus facilis quisquam, blanditiis
+            officiis?</p>
+        <table>
+            <tr>
+                <th>Jogador 1</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Vida</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><button id="minus" onclick="rmvLife(1)">-</button></td>
+                <td id="life1">20</td>
+                <td><button id="plus" onclick="addLife(1)">+</button></td>
+                <td id="lifedisplay1"></td>
+            </tr>
+
+            <tr>
+
+                <th>Jogador 2</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Vida</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><button id="minus" onclick="rmvLife(2)">-</button></td>
+                <td><span id="life2">20</span></td>
+                <td><button id="plus" onclick="addLife(2)">+</button></td>
+                <td id="lifedisplay2"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="../js/battle.js"></script>
+</body>
 
 </html>
